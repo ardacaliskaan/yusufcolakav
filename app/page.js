@@ -1,22 +1,22 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center p-4">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
+      <div className="absolute inset-0 opacity-40">
+        <div className="w-full h-full bg-repeat" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+        }}></div>
+      </div>
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        {/* Logo/Scale of Justice Icon */}
         <div className="mb-8 flex justify-center">
           <div className="relative">
             <svg className="w-24 h-24 text-amber-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 6L13 7H9V9H11L12 18L13 9H15L21 9ZM7.5 7C8.3 7 9 7.7 9 8.5S8.3 10 7.5 10 6 9.3 6 8.5 6.7 7 7.5 7ZM16.5 7C17.3 7 18 7.7 18 8.5S17.3 10 16.5 10 15 9.3 15 8.5 15.7 7 16.5 7ZM7.5 11C9.4 11 11 12.6 11 14.5V16H4V14.5C4 12.6 5.6 11 7.5 11ZM16.5 11C18.4 11 20 12.6 20 14.5V16H13V14.5C13 12.6 14.6 11 16.5 11Z"/>
             </svg>
-            {/* Animated ring */}
             <div className="absolute inset-0 rounded-full border-2 border-amber-400/30 animate-pulse scale-150"></div>
           </div>
         </div>
 
-        {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-serif text-white mb-4 tracking-tight">
           Yılmaz Çolak
           <span className="block text-3xl md:text-4xl text-amber-400 font-normal mt-2">
@@ -24,12 +24,10 @@ export default function Home() {
           </span>
         </h1>
 
-        {/* Subtitle */}
         <p className="text-xl md:text-2xl text-slate-300 mb-8 font-light">
           Adalet ve Güvenin Adresi
         </p>
 
-        {/* Coming Soon Message */}
         <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 md:p-12 mb-8">
           <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
             Yakında Hizmetinizde
@@ -38,27 +36,25 @@ export default function Home() {
             Profesyonel hukuki danışmanlık hizmetlerimiz ile size en iyi çözümleri sunmak için hazırlıklarımızı sürdürüyoruz.
           </p>
           
-          {/* Services Preview */}
           <div className="grid md:grid-cols-3 gap-4 mb-8">
             <div className="bg-white/5 rounded-lg p-4">
-              <div className="text-amber-400 mb-2">⚖️</div>
+              <div className="text-amber-400 mb-2 text-2xl">⚖️</div>
               <h3 className="text-white font-semibold mb-1">Hukuki Danışmanlık</h3>
               <p className="text-slate-300 text-sm">Tüm hukuki konularda uzman danışmanlık</p>
             </div>
             <div className="bg-white/5 rounded-lg p-4">
-              <div className="text-amber-400 mb-2">📋</div>
+              <div className="text-amber-400 mb-2 text-2xl">📋</div>
               <h3 className="text-white font-semibold mb-1">Sözleşme Hazırlama</h3>
               <p className="text-slate-300 text-sm">Profesyonel sözleşme düzenleme</p>
             </div>
             <div className="bg-white/5 rounded-lg p-4">
-              <div className="text-amber-400 mb-2">🏛️</div>
+              <div className="text-amber-400 mb-2 text-2xl">🏛️</div>
               <h3 className="text-white font-semibold mb-1">Mahkeme Temsili</h3>
               <p className="text-slate-300 text-sm">Tüm mahkemelerde temsil</p>
             </div>
           </div>
         </div>
 
-        {/* Contact Info */}
         <div className="text-center mb-8">
           <p className="text-slate-300 mb-4">
             Acil durumlar için bize ulaşın:
@@ -81,7 +77,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Website URL */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center bg-amber-400/10 border border-amber-400/30 rounded-full px-6 py-3">
             <svg className="w-5 h-5 text-amber-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -91,19 +86,17 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Developer Credit */}
         <div className="text-center">
           <p className="text-slate-400 text-sm">
             Web tasarım: <span className="text-amber-400">Arda Çalışkan</span>
           </p>
         </div>
 
-        {/* Loading Animation */}
         <div className="mt-12 flex justify-center">
           <div className="flex space-x-1">
             <div className="w-2 h-2 bg-amber-400 rounded-full animate-bounce"></div>
-            <div className="w-2 h-2 bg-amber-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-            <div className="w-2 h-2 bg-amber-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+            <div className="w-2 h-2 bg-amber-400 rounded-full animate-bounce delay-100"></div>
+            <div className="w-2 h-2 bg-amber-400 rounded-full delay-200 animate-bounce"></div>
           </div>
         </div>
       </div>
